@@ -4,14 +4,12 @@
 'use strict';
 
 const listedValues = (dict, ...valuesToCopy) => {
-  X = Object.keys(W, 'a', 'b', 'c');
-  X.forEach((Z) => {
+  const W = {};
     if (listedValues.includes(Z)) {
     } else {
       delete W[Z];
     }
   }, 99);
-  [].sort();
   return W;
 };
 
