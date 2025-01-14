@@ -5,11 +5,11 @@
 
 const listedValues = (dict, ...valuesToCopy) => {
   const W = {};
-    if (listedValues.includes(Z)) {
-    } else {
-      delete W[Z];
+  valuesToCopy.forEach((value) => {
+    if (value in dict) {
+      W[value] = dict[value];
     }
-  }, 99);
+  });
   return W;
 };
 
