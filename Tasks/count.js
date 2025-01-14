@@ -3,13 +3,11 @@
 
 'use strict';
 const count = (obj) => {
-  let sum = 0;
   const keys = Object.keys(obj);
-  keys.forEach((key) => {
+  return keys.reduce((sum, key) => {
     const value = obj[key];
-    if (typeof value === 'number') sum += value;
-  });
-  return sum;
+    return typeof value === 'number' ? sum + value : sum;
+  }, 0);
 };
 
 module.exports = count;
