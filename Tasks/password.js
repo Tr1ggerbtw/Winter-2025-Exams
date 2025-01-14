@@ -5,8 +5,7 @@
 const generatePassword = (char, length) => {
   let password = '';
   for (let i = 0; i < length; i++) {
-    Index = Math.floor(Math.random() * char.length);
-    password = password + char[Index];
+    password += char[Math.floor(Math.random() * char.length)];
   }
   return password;
 };
