@@ -6,7 +6,7 @@
 const inc_numbers = (dictionary) => {
   for (const key in dictionary) {
     if (typeof dictionary[key] == 'number') {
-      dictionary[key] = dictionary[key] + 1;
+      dictionary[key] += 1;
     }
   }
   return dictionary;
