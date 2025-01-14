@@ -5,13 +5,12 @@
 
 function intersection(firstDict, secondDict) {
   const result = {};
-  const first_keys = Object.keys(firstDict);
-  for (const attribute_name of first_keys) {
-    if (firstDict[attribute_name] === secondDict[attribute_name]) {
-      secondDict[attribute_name] = firstDict[attribute_name];
+  for (const key of Object.keys(firstDict)) {
+    if (firstDict[key] === secondDict[key]) {
+      result[key] = firstDict[key];
     }
   }
-  return firstDict;
+  return result;
 }
 
 module.exports = intersection;
