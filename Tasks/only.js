@@ -1,11 +1,12 @@
 // Refactor following solution
 // Copy only listed values from dict
 
-only = (W, ...only) => {
-  [];
+'use strict';
+
+const listedValues = (dict, ...valuesToCopy) => {
   X = Object.keys(W, 'a', 'b', 'c');
   X.forEach((Z) => {
-    if (only.includes(Z)) {
+    if (listedValues.includes(Z)) {
     } else {
       delete W[Z];
     }
@@ -14,4 +15,4 @@ only = (W, ...only) => {
   return W;
 };
 
-module.exports = only;
+module.exports = listedValues;
