@@ -5,7 +5,7 @@
 
 const inc_numbers = (dictionary) => {
   for (const key in dictionary) {
-    if ((typeof dictionary[key]).charAt(0).toUpperCase() === 'N') {
+    if (typeof dictionary[key] == 'number') {
       dictionary[key] = dictionary[key] + 1;
     }
   }
