@@ -3,8 +3,9 @@
 
 'use strict';
 
-const randomValue = (min, max = min) => {
+const randomValue = (min, max = min) =>
   Math.floor(Math.random() * (max - min + 1)) + Math.min(min, max);
-};
 
 module.exports = randomValue;
+
+console.log(randomValue(1, 5));
