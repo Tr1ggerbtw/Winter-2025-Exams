@@ -4,13 +4,13 @@
 'use strict';
 
 const listedValues = (dict, ...valuesToCopy) => {
-  const W = {};
-  valuesToCopy.forEach((value) => {
+  const result = {}; // Create an empty object to store the result
+  for (const value of valuesToCopy) {
     if (value in dict) {
-      W[value] = dict[value];
+      result[value] = dict[value];
     }
-  });
-  return W;
+  }
+  return result;
 };
 
 module.exports = listedValues;
